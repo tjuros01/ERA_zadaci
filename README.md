@@ -1,0 +1,1 @@
+Jedan odvjetnik brani više klijenata. Jednog klijenta može braniti više puta. U obranama mu pomažu suradnici. Na jednoj obrani može biti više suradnika a jedan suradnik može sudjelovati na više obrana.
