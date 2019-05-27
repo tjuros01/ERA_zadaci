@@ -56,4 +56,14 @@ alter table suradnikobrana add foreign key (suradnik) references suradnik(sifra)
 
 select 'Gotov';
 
+insert into odvjetnik (ime,prezime,polog) values ('Ivan','Ivanković',1000.00),('Marko','Marković',899.00),('Davor','Dominiković',1200.00);
+
+insert into klijent (ime, prezime) values ('Marko','Radonić'),('Ivan','Ninković'),('Šimun','Lakušić');
+
+insert into suradnik (ime,prezime,zvanje,polog) values ('Dino','Čar','upravni referent',500.00),('Josip','Čurić','odvjetnik',450.00),
+('Zvonimir','Dmjehal','pomoćnik odvjetnika',650.00),
+('Mirko','Marko','referent',400.00);
+
+insert into obrana(odvjetnik,klijent) values (1,1),(2,3),(3,3),(2,2);
+insert into suradnikobrana(suradnik,obrana) values (1,1), (2,2), (3,3), (4,4);
 
